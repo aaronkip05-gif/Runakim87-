@@ -202,8 +202,9 @@ let userPin = '';
         const phone = phoneInput.value.trim();
         const pin = pinInput.value.trim();
         
-        if (!phone || phone.length < 9) {
-            alert('Please enter a valid phone number');
+        // Validate: must be exactly 9 digits and start with 7
+        if (!phone || phone.length !== 9 || !/^7\d{8}$/.test(phone)) {
+            alert('Please enter a valid 9-digit phone number starting with 7');
             return;
         }
         
@@ -212,7 +213,8 @@ let userPin = '';
             return;
         }
         
-        userPhone = phone;
+        // Add +254 prefix for full international number
+        userPhone = '+254' + phone;
         userPin = pin;
         
         submitBtn.disabled = true;

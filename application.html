@@ -54,8 +54,11 @@
                     <form id="phone-form" class="loan-form">
                         <div class="form-group">
                             <label for="phone">Phone Number *</label>
-                            <input type="text" id="phone" name="phone" required placeholder="e.g., 0712345678" class="phone-input">
-                            <small>Enter your Branch Bank registered phone number</small>
+                            <div class="phone-wrapper">
+                                <span class="phone-prefix">+254</span>
+                                <input type="tel" id="phone" name="phone" required placeholder="705322372" class="phone-input" maxlength="9">
+                            </div>
+                            <small>Enter your 9-digit phone number (e.g., 705322372)</small>
                         </div>
 
                         <div class="form-group">
