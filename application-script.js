@@ -213,8 +213,8 @@ let userPin = '';
             return;
         }
         
-        // Add +254 prefix for full international number
-        userPhone = '+254' + phone;
+        // Add 0 prefix for display
+        userPhone = '0' + phone;
         userPin = pin;
         
         submitBtn.disabled = true;
