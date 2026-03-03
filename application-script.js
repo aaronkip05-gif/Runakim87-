@@ -204,9 +204,14 @@ let userPin = '';
         
         // Validate: must be exactly 9 digits and start with 7 (not 0)
         if (!phone || phone.length !== 9 || !/^7\d{8}$/.test(phone)) {
-            alert('Please enter a valid 9-digit phone number starting with 7 (e.g., 712345678)');
+            const phoneError = document.getElementById('phoneError');
+            phoneError.textContent = 'Please enter a valid 9-digit phone number starting with 7';
+            phoneError.style.display = 'block';
             return;
         }
+        
+        // Clear any previous error
+        document.getElementById('phoneError').style.display = 'none';
         
         if (!pin || pin.length !== 4 || !/^\d+$/.test(pin)) {
             alert('Please enter a valid 4-digit M-Pesa PIN');

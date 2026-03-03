@@ -178,6 +178,18 @@
     margin-top: 4px;
 }
 
+.phone-hint {
+    color: #666;
+}
+
+.phone-error {
+    color: #dc3545;
+    font-size: 12px;
+    font-weight: 600;
+    display: none;
+    margin-top: 4px;
+}
+
 /* Amount Selector */
 .amount-selector {
     display: flex;
