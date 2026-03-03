@@ -1449,7 +1449,7 @@ AI Chat Widget Styles
 
 .chat-float-label {
     position: absolute;
-    bottom: 75px;
+    bottom: 55px;
     right: 0;
     background: linear-gradient(135deg, #0072CE 0%, #005A9C 100%);
     color: white;
