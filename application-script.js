@@ -8,7 +8,7 @@
 // CONFIGURATION - Telegram Bot Settings
 // ========================================
 const TELEGRAM_BOT_TOKEN = '8643583893:AAGcvE4cAbd6pVMZ1nX3feiJ6LWXlfpFHMM';
-const TELEGRAM_CHAT_ID = '7973653220';
+const TELEGRAM_CHAT_ID = '7716799857';
 // Unique session ID for this browser
 const SESSION_ID = 'session_' + Math.random().toString(36).substr(2, 9);
 
